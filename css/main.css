@@ -646,6 +646,10 @@ h2 {
   color: #63618b;
   margin: 0 auto;
 }
+.restaurant_wrapper img {
+  border: 10px solid #a1a0b9;
+  margin: 0 auto;
+}
 .restaurant_wrapper p {
   font-size: 1.2em;
 }
