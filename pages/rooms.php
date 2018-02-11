@@ -112,7 +112,7 @@
                         <div class="offer_name_wrapper relative">
                             <div class="offer_name w-100 text-center absolute">
                                 <h3 class="py-20 m-0">Luhury Room</h3>
-                                <button type="button" class="p5-10">Book Now</button>
+                                <a class="book_room d-inline-block p5-10" href="room_review.php">Book Now</a>
                             </div>
                         </div>
                     </div>

@@ -29,7 +29,7 @@
                 <div id="main_title" class="text-center absolute">
                     <h1 class="py-15 font-weight-bold">Welcome to Luxury hotel</h1>
                     <p class="py-15 ">Enjoy your stay</p>
-                    <button type="button">Take a tour</button>
+                    <a href="rooms.php">Take a tour</a>
                 </div>
             </section>
 
