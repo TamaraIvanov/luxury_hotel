@@ -471,6 +471,10 @@ h2 {
     cursor: pointer;
     border-bottom: 1px solid @violet;
     padding: 10px;
+    &:first-child {
+      background-color: @blue;
+      color: @white;
+    }
     &:hover {
       background-color: @light_violet;
       color: @white;
@@ -769,6 +773,10 @@ h2 {
 
 .meeting_wrapper {
   margin: 0 auto;
+  img {
+    border: 10px solid @light_violet;
+    margin: 0 auto;
+  }
 }
 .meeting_offer {
   color: @violet;

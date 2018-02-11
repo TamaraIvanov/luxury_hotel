@@ -164,7 +164,7 @@
 
             $("#main_gallery").find("div").click(function () {
 
-                $(this).closest("section").find("#gallery_view").addClass("activeClass").removeClass("no-display");
+                $(this).closest("section").find("#gallery_view").addClass("activeClass");
             });
 
             slickSlider();
@@ -177,7 +177,7 @@
             });
 
             $(".exit").click(function () {
-                $(this).closest("#gallery_view").addClass("no-display");
+                $(this).closest("#gallery_view").removeClass("activeClass");
             });
         });
 

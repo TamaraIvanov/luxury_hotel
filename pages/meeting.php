@@ -64,7 +64,7 @@
                         <div class="offer_name_wrapper relative">
                             <div class="offer_name w-100 text-center absolute">
                                 <h3 class="py-20 m-0">Conference Hall</h3>
-                                <button type="button" class="p5-10">Book Now</button>
+                                <button type="button" class="book_room p5-10">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         <div class="offer_name_wrapper relative">
                             <div class="offer_name w-100 text-center absolute">
                                 <h3 class="py-20 m-0">Meeting Room</h3>
-                                <button type="button" class="p5-10">Book Now</button>
+                                <button type="button" class="book_room p5-10">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                         <div class="offer_name_wrapper relative">
                             <div class="offer_name w-100 text-center absolute">
                                 <h3 class="py-20 m-0">Wedding Hallm</h3>
-                                <button type="button" class="p5-10">Book Now</button>
+                                <button type="button" class="book_room p5-10">Book Now</button>
                             </div>
                         </div>
                     </div>

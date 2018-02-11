@@ -417,6 +417,10 @@ h2 {
   border-bottom: 1px solid #63618b;
   padding: 10px;
 }
+.filter_rooms li:first-child {
+  background-color: #5972ac;
+  color: #fff;
+}
 .filter_rooms li:hover {
   background-color: #a1a0b9;
   color: #fff;
@@ -650,6 +654,10 @@ h2 {
 }
 /********  MEETING PAGE  *********/
 .meeting_wrapper {
+  margin: 0 auto;
+}
+.meeting_wrapper img {
+  border: 10px solid #a1a0b9;
   margin: 0 auto;
 }
 .meeting_offer {
