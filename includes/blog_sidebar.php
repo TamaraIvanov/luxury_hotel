@@ -2,7 +2,7 @@
 <div id="blog_sidebar" class="col-md-5">
 
     <div class="search relative">
-        <input class="w-100 pl-3 pr-5" name="search" placeholder="Type keywords"/>
+        <input class="w-100 pl-3 pr-5" name="search" type="search" placeholder="Type keywords"/>
         <button type="submit" class="absolute right0"><i class="fa fa-search fa-2x" aria-hidden="true"></i></i></button>
     </div>
 
@@ -16,7 +16,7 @@
             <div class="posts clearfix py-3 px-0 col-md-12">
 
                 <div class="col-12 col-sm-5 col-md-12 col-xl-5 float-left pl-0 pb-3">
-                    <img class="w-100" src="../img/blog_post_1.jpg">
+                    <img class="w-100" src="img/blog_post_1.jpg">
                 </div>
 
                 <div class="col-12 col-sm-7 col-md-12 col-xl-7 float-left p-0">
@@ -39,7 +39,7 @@
             <div class="posts clearfix py-3 px-0 col-md-12">
 
                 <div class="col-12 col-sm-5 col-md-12 col-xl-5 float-left pl-0 pb-3">
-                    <img class="w-100" src="../img/blog_post_2.jpg">
+                    <img class="w-100" src="img/blog_post_2.jpg">
                 </div>
 
                 <div class="col-12 col-sm-7 col-md-12 col-xl-7 float-left p-0">
@@ -62,7 +62,7 @@
             <div class="posts clearfix py-3 px-0  col-md-12">
 
                 <div class="col-12 col-sm-5 col-md-12 col-xl-5 float-left pl-0 pb-3">
-                    <img class="w-100" src="../img/blog_post_3.jpg">
+                    <img class="w-100" src="img/blog_post_3.jpg">
                 </div>
 
                 <div class="col-12 col-sm-7 col-md-12 col-xl-7 float-left p-0">
@@ -85,7 +85,7 @@
             <div class="posts clearfix py-3 px-0 col-md-12">
 
                 <div class="col-12 col-sm-5 col-md-12 col-xl-5 float-left pl-0 pb-3">
-                    <img class="w-100" src="../img/blog_post_4.jpg">
+                    <img class="w-100" src="img/blog_post_4.jpg">
                 </div>
 
                 <div class="col-12 col-sm-7 col-md-12 col-xl-7 float-left p-0">

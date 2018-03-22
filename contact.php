@@ -1,14 +1,14 @@
 <html>
-<?php include "../includes/head.php";?>
+<?php include "includes/head.php";?>
 <body>
 <div id="reservation_review">
     <div id="container">
 
-        <?php include "../includes/sidebar.php";?>
+        <?php include "includes/sidebar.php";?>
 
         <div id="content">
 
-            <?php include "../includes/header.php";?>
+            <?php include "includes/header.php";?>
 
             <section id="contact">
 
@@ -48,8 +48,8 @@
 
                             <div class="contact">
                                 <address class="py-2 m-0">1133 N.Dysart Road, 56789, GR</address>
-                                <a class="mail py-2" href="mailto:INFO@LUXURYHOTEL.COM">info@diamondhotel.com</a>
-                                <a class="tel py-2" href="tel:+3 653-306-6100">+30 666-33</a>
+                                <a class="mail py-2" href="mailto:INFO@LUXURYHOTEL.COM">info@luxuryhotel.com</a>
+                                <a class="tel py-2" href="tel:+3 653-306-6100">+3 653-306-6100</a>
                             </div>
 
                             <p class="py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales id nunc eget posuere.
@@ -64,16 +64,11 @@
                 </div>
             </section>
 
-            <?php include "../includes/footer.php";?>
+            <?php include "includes/footer.php";?>
         </div>
     </div>
 </div>
 
-
-
-<script src="../js/jquery-3.1.1.js"></script>
-<script src="../js/jquery.validate.js"></script>
-<script src="../js/main.js"></script>
 
 <script>
 

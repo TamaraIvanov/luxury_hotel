@@ -251,6 +251,10 @@ body {
   .book {
     color: @white;
     border: 1px solid @white;
+    &:hover {
+      color: @dark_violet;
+      border-color: @dark_violet;
+    }
   }
 }
 .booking_form_wrapper {
@@ -298,7 +302,11 @@ body {
 .check_btn {
   color: @white;
   background-color: @light_violet;
-  border-color: @light_violet;
+  border: 2px solid @light_violet;
+  &:hover {
+    background-color: @violet;
+    border-color: @dark_violet;
+  }
 }
 .preloader_wrapper {
   position: fixed;
@@ -402,7 +410,6 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     color: @white;
-
     h1 {
       font-size: 4em;
     }
@@ -414,6 +421,10 @@ body {
       border: 2px solid @white;
       padding: 10px 30px;
       color: @white;
+      &:hover {
+        color: @dark_violet;
+        border-color: @dark_violet;
+      }
     }
   }
 }
@@ -458,23 +469,26 @@ section {
 }
 .offer_container {
   margin-bottom: 60px;
+  .active {
+    display: block;
+  }
 }
 h2 {
   font-size: 2em;
   color: @violet;
   border-bottom: 1px solid @violet;
 }
-.filter_rooms {
+.filter_offers {
+  .active {
+    background-color: @blue;
+    color: @white;
+  }
   li {
     color: @violet;
     font-size: 1.3em;
     cursor: pointer;
     border-bottom: 1px solid @violet;
     padding: 10px;
-    &:first-child {
-      background-color: @blue;
-      color: @white;
-    }
     &:hover {
       background-color: @light_violet;
       color: @white;
@@ -486,13 +500,17 @@ h2 {
   top: -55px;
   right: 15px;
 }
-.offer_content {
+.offer_content,
+.offer {
   overflow: hidden;
   &:hover {
     .offer_name_wrapper {
       bottom: 100px;
     }
   }
+}
+.offer_content {
+  display: none;
 }
 .price {
   background-color: @dark_violet;
@@ -706,11 +724,6 @@ h2 {
 }
 
 /********  RESERVATION REVIEW BOOKING FORM  *********/
-
-
-
-
-/********  RESERVATION REVIEW PAGE  *********/
 
 
 #reservation_review_section {
@@ -1052,8 +1065,14 @@ h2 {
 .blog_all {
   color: @violet;
 }
+.write_comment {
+  .error {
+    color: red;
+  }
+}
 .comment {
   border-bottom: 1px solid @violet;
+
   span {
     font-size: 1.4em;
   }
@@ -1269,10 +1288,10 @@ h2 {
       border: 0;
     }
   }
-  .filter_rooms_wrapper {
+  .filter_wrapper {
     padding: 10px !important;
   }
-  .filter_rooms {
+  .filter_offers {
     display: none ;
     position: absolute;
     z-index: 1;

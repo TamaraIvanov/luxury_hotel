@@ -1,5 +1,5 @@
 <html xmlns="http://www.w3.org/1999/html">
-<?php include "../includes/head.php";?>
+<?php include "includes/head.php";?>
 <body>
 
 
@@ -8,20 +8,20 @@
 
     <div id="container">
 
-        <?php include "../includes/sidebar.php";?>
+        <?php include "includes/sidebar.php";?>
 
         <div id="content">
-            <?php include "../includes/header.php";?>
+            <?php include "includes/header.php";?>
             <section id="home_page" class="m-0 relative">
                 <div id="auto_slider" class="clearfix relative">
                     <div class="float-left">
-                        <img src="../img/auto_slide1.jpg" class="w-100">
+                        <img src="img/auto_slide1.jpg" class="w-100">
                     </div>
                     <div class="float-left">
-                        <img src="../img/auto_slide2.jpg" class="w-100">
+                        <img src="img/auto_slide2.jpg" class="w-100">
                     </div>
                     <div class="float-left">
-                        <img src="../img/auto_slide3.jpg" class="w-100">
+                        <img src="img/auto_slide3.jpg" class="w-100">
                     </div>
                 </div>
 
@@ -33,16 +33,12 @@
                 </div>
             </section>
 
-            <?php include "../includes/footer.php";?>
+            <?php include "includes/footer.php";?>
         </div>
     </div>
 </div>
 
-
-<script src="../js/jquery-3.1.1.js"></script>
-<script src="../js/slick/slick.min.js"></script>
-<script src="../js/main.js"></script>
-
+<script src="js/slick/slick.min.js"></script>
 
 <script>
     (function($) {

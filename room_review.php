@@ -1,14 +1,14 @@
 <html>
-<?php include "../includes/head.php";?>
+<?php include "includes/head.php";?>
 <body>
 <div id="rooms">
     <div id="container">
 
-        <?php include "../includes/sidebar.php";?>
+        <?php include "includes/sidebar.php";?>
 
         <div id="content">
 
-            <?php include "../includes/header.php";?>
+            <?php include "includes/header.php";?>
 
             <section id="rooms_review_section">
 
@@ -20,7 +20,7 @@
                 <div class="row py-60">
                     
                     <div class="room_img_wrapper col-12 col-md-6">
-                        <img class="w-100" src="../img/room1.jpg">
+                        <img class="w-100" src="img/room1.jpg">
                     </div>
 
                     <div class="room_details col-12 col-md-12 col-xl-6">
@@ -79,17 +79,17 @@
                 <div id="grid_gallery" class="d-flex flex-wrap py-5">
 
                     <div>
-                        <img src="../img/04_Room_review_01.jpg">
-                        <img src="../img/04_Room_review_03.jpg">
-                        <img src="../img/04_Room_review_02.jpg">
-                        <img src="../img/04_Room_review_04.jpg">
+                        <img src="img/04_Room_review_01.jpg">
+                        <img src="img/04_Room_review_03.jpg">
+                        <img src="img/04_Room_review_02.jpg">
+                        <img src="img/04_Room_review_04.jpg">
                     </div>
 
                     <div>
-                        <img src="../img/04_Room_review_02.jpg">
-                        <img src="../img/04_Room_review_04.jpg">
-                        <img src="../img/04_Room_review_01.jpg">
-                        <img src="../img/04_Room_review_03.jpg">
+                        <img src="img/04_Room_review_02.jpg">
+                        <img src="img/04_Room_review_04.jpg">
+                        <img src="img/04_Room_review_01.jpg">
+                        <img src="img/04_Room_review_03.jpg">
                     </div>
                 </div>
 
@@ -101,13 +101,10 @@
                 </div>
             </section>
 
-            <?php include "../includes/footer.php";?>
+            <?php include "includes/footer.php";?>
         </div>
     </div>
 </div>
-
-<script src="../js/jquery-3.1.1.js"></script>
-<script src="../js/main.js"></script>
 <script>
 
     (function($) {

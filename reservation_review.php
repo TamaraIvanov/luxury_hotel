@@ -1,14 +1,14 @@
 <html>
-<?php include "../includes/head.php";?>
+<?php include "includes/head.php";?>
 <body>
 <div id="reservation_review">
     <div id="container">
 
-        <?php include "../includes/sidebar.php";?>
+        <?php include "includes/sidebar.php";?>
 
         <div id="content">
 
-            <?php include "../includes/header.php";?>
+            <?php include "includes/header.php";?>
 
             <section id="reservation_review_section">
 
@@ -29,7 +29,7 @@
                             <div class="selected_room  col-md-12 col-xl-7  float-left">
 
                                 <div class="room_img_wrapper pt-2">
-                                    <img class="w-100" src="../img/rooms/room1.jpg">
+                                    <img class="w-100" src="img/rooms/room1.jpg">
                                     <p class="py-2">Double bad room, 1 Night</p>
                                 </div>
                             </div>
@@ -116,22 +116,11 @@
 
             </section>
 
-            <?php include "../includes/footer.php";?>
+            <?php include "includes/footer.php";?>
         </div>
     </div>
 </div>
 
-<script src="../js/jquery-3.1.1.js"></script>
-
-<script src="../js/tether-1.4.0.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-
-<script src="../js/bootstrap-datepicker.min.js"></script>
-
-<script src="../js/jquery.validate.js"></script>
-<script src="../js/select2/select2.js"></script>
-<script src="../js/select2/select2-bootstrap-min.js"></script>
-<script src="../js/main.js"></script>
 
 <script>
 

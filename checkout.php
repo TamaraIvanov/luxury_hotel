@@ -1,14 +1,14 @@
 <html>
-<?php include "../includes/head.php";?>
+<?php include "includes/head.php";?>
 <body>
 <div id="reservation_review">
     <div id="container">
 
-        <?php include "../includes/sidebar.php";?>
+        <?php include "includes/sidebar.php";?>
 
         <div id="content">
 
-            <?php include "../includes/header.php";?>
+            <?php include "includes/header.php";?>
 
             <section id="reservation_review_section">
 
@@ -91,33 +91,28 @@
 
                     <div class="billing_method py-30 row">
                         <div class="col-sm-12 col-md-6 col-xl-3">
-                            <img class="px-2 py-20" src="../img/card_pay_pal.jpg">
+                            <img class="px-2 py-20" src="img/card_pay_pal.jpg">
                         </div>
 
                         <div class="col-sm-12 col-md-6 col-xl-3">
-                            <img class="px-2 py-20" src="../img/card_mastercard.jpg">
+                            <img class="px-2 py-20" src="img/card_mastercard.jpg">
                         </div>
 
                         <div class="col-sm-12 col-md-6 col-xl-3">
-                            <img class="px-2 py-20" src="../img/card_american.jpg">
+                            <img class="px-2 py-20" src="img/card_american.jpg">
                         </div>
 
                         <div class="col-sm-12 col-md-6 col-xl-3">
-                            <img class="px-2 py-20" src="../img/card_visa.jpg">
+                            <img class="px-2 py-20" src="img/card_visa.jpg">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <?php include "../includes/footer.php";?>
+            <?php include "includes/footer.php";?>
         </div>
     </div>
 </div>
-
-<script src="../js/jquery-3.1.1.js"></script>
-<script src="../js/jquery.validate.js"></script>
-<script src="../js/main.js"></script>
-
 
 <script>
 

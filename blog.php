@@ -1,14 +1,14 @@
 <html>
-<?php include "../includes/head.php";?>
+<?php include "includes/head.php";?>
 <body>
 <div id="reservation_review">
     <div id="container">
 
-        <?php include "../includes/sidebar.php";?>
+        <?php include "includes/sidebar.php";?>
 
         <div id="content">
 
-            <?php include "../includes/header.php";?>
+            <?php include "includes/header.php";?>
 
             <section id="blog_section">
 
@@ -23,7 +23,7 @@
                         <!-- BLOG 1 -->
 
                         <div class="blog_content py-60 clearfix">
-                            <img class="w-100" src="../img/blog1.jpg">
+                            <img class="w-100" src="img/blog1.jpg">
 
                             <div class="clearfix py-30">
                                 <h4 class="float-left font-weight-bold">The new beach we offer</h4>
@@ -41,7 +41,7 @@
                             </p>
 
 
-                            <a class="float-right my-4 px-3 py-1 d-block" href="blog_the_beach.php" >Read more</a>
+                            <a class="float-right my-4 px-3 py-1 d-block" href="blog_night_party.php" >Read more</a>
 
                             <ul class="comments float-left pb-4 w-100">
 
@@ -62,7 +62,7 @@
                         <!-- BLOG 2 -->
 
                         <div class="blog_content clearfix">
-                            <img class="w-100" src="../img/blog2.jpg">
+                            <img class="w-100" src="img/blog2.jpg">
 
                             <div class="clearfix py-30">
                                 <h4 class="float-left font-weight-bold">Night party at the pool</h4>
@@ -100,18 +100,16 @@
                         </div>
                     </div>
 
-                    <?php include "../includes/blog_sidebar.php";?>
+                    <?php include "includes/blog_sidebar.php";?>
                 </div>
 
             </section>
 
-            <?php include "../includes/footer.php";?>
+            <?php include "includes/footer.php";?>
         </div>
     </div>
 </div>
 
-<script src="../js/jquery-3.1.1.js"></script>
-<script src="../js/main.js"></script>
 
 </body>
 </html>

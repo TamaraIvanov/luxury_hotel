@@ -228,6 +228,10 @@ body {
   color: #fff;
   border: 1px solid #fff;
 }
+#header .book:hover {
+  color: #201f40;
+  border-color: #201f40;
+}
 .booking_form_wrapper {
   width: 300px;
   background: rgba(89, 114, 172, 0.9);
@@ -269,7 +273,11 @@ body {
 .check_btn {
   color: #fff;
   background-color: #a1a0b9;
-  border-color: #a1a0b9;
+  border: 2px solid #a1a0b9;
+}
+.check_btn:hover {
+  background-color: #63618b;
+  border-color: #201f40;
 }
 .preloader_wrapper {
   position: fixed;
@@ -369,6 +377,10 @@ body {
   padding: 10px 30px;
   color: #fff;
 }
+#home_page #main_title a:hover {
+  color: #201f40;
+  border-color: #201f40;
+}
 #auto_slider {
   overflow: hidden;
 }
@@ -405,23 +417,26 @@ section {
 .offer_container {
   margin-bottom: 60px;
 }
+.offer_container .active {
+  display: block;
+}
 h2 {
   font-size: 2em;
   color: #63618b;
   border-bottom: 1px solid #63618b;
 }
-.filter_rooms li {
+.filter_offers .active {
+  background-color: #5972ac;
+  color: #fff;
+}
+.filter_offers li {
   color: #63618b;
   font-size: 1.3em;
   cursor: pointer;
   border-bottom: 1px solid #63618b;
   padding: 10px;
 }
-.filter_rooms li:first-child {
-  background-color: #5972ac;
-  color: #fff;
-}
-.filter_rooms li:hover {
+.filter_offers li:hover {
   background-color: #a1a0b9;
   color: #fff;
 }
@@ -430,11 +445,16 @@ h2 {
   top: -55px;
   right: 15px;
 }
-.offer_content {
+.offer_content,
+.offer {
   overflow: hidden;
 }
-.offer_content:hover .offer_name_wrapper {
+.offer_content:hover .offer_name_wrapper,
+.offer:hover .offer_name_wrapper {
   bottom: 100px;
+}
+.offer_content {
+  display: none;
 }
 .price {
   background-color: #201f40;
@@ -612,7 +632,6 @@ h2 {
   background-color: #63618b;
 }
 /********  RESERVATION REVIEW BOOKING FORM  *********/
-/********  RESERVATION REVIEW PAGE  *********/
 #reservation_review_section .billing_title {
   font-size: 1.6em;
 }
@@ -888,6 +907,9 @@ h2 {
 .blog_all {
   color: #63618b;
 }
+.write_comment .error {
+  color: red;
+}
 .comment {
   border-bottom: 1px solid #63618b;
 }
@@ -1066,10 +1088,10 @@ h2 {
   .comments li {
     border: 0;
   }
-  .filter_rooms_wrapper {
+  .filter_wrapper {
     padding: 10px !important;
   }
-  .filter_rooms {
+  .filter_offers {
     display: none ;
     position: absolute;
     z-index: 1;
@@ -1078,10 +1100,10 @@ h2 {
     right: 15px;
     width: 180px;
   }
-  .filter_rooms li {
+  .filter_offers li {
     float: none !important;
   }
-  .filter_rooms li:last-child {
+  .filter_offers li:last-child {
     border: 0;
   }
 }

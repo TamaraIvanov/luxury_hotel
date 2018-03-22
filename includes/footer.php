@@ -16,3 +16,65 @@
         </ul>
     </div>
 </footer>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/tether-1.4.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/select2/select2.js"></script>
+<script src="js/select2/select2-bootstrap-min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    (function($) {
+        $(function() {
+
+            $(".select_room").select2({
+                placeholder: 'Select a room',
+                allowClear: true,
+                theme: "classic"
+            });
+
+            $("#js_adult,#js_children ").select2({
+                placeholder: 'Select a adult',
+                allowClear: true,
+                theme: "classic"
+            });
+
+            $.validator.addMethod("greaterThanDate",
+                function(value, element, params) {
+
+                    var elementVal = $(element).val();
+                    var	paramsVal = $(params).val();
+
+                    var startDate = new Date(swapPositionDate(paramsVal)).getTime();
+                    var endDate = new Date(swapPositionDate(elementVal)).getTime();
+
+                    return endDate > startDate;
+
+                }, 'Must be greater than {0}.');
+
+            $("#check_form").validate();
+
+
+            $("#js_check_in, #js_check_out ").datepicker({
+                format: "dd.mm.yyyy",
+                weekStart: 1,
+                todayHighlight: true,
+                startDate: 'd',
+                autoclose: true
+
+            });
+        });
+
+        function swapPositionDate(date) {
+
+            var dateParams = date.split(".");
+            return dateParams[1]+'/'+dateParams[0]+'/'+dateParams[2];
+        }
+
+    })(jQuery);
+
+</script>
+

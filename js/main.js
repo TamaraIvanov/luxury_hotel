@@ -6,28 +6,41 @@
 
     $(document).ready(function() {
 
-        $('.js_drop_down_btn_menu').click(function(e) {
-            $('.js_drop_down_menu').slideToggle(400);
-            e.stopPropagation();
+
+        var windowSize = $(window).width();
+
+
+
+        /************  DROP LIST  *************/
+
+        var dropList = $(".js-drop-list");
+        var mainDropList = $(".js-main-drop-list");
+        var dropBtn =  $(".js-drop-btn");
+
+        dropBtn.click(function () {
+
+            $(".js-booking").slideUp(400);
+            if(windowSize <= 576) {
+                dropList.slideUp(400);
+            }
+            $(this).next(".js-drop-list").slideToggle(500);
+
         });
 
-        $(".js_drop_down_btn").click(function(e){
-            var $dropMenu = $(this).siblings(".js_drop_down");
-            $dropMenu.slideToggle(400);
-            $('.js_drop_down').not($dropMenu).slideUp(400);
-            e.stopPropagation();
-        });
-
-        $('.js_drop_down, .js_drop_down_menu').click(function(e) {
+        dropBtn.click(function(e) {
             e.stopPropagation();
         });
 
         $('body').click(function () {
-            $('.js_drop_down').slideUp(400);
-            if($('.js_drop_down_btn_menu').is(':visible')) {
-                $('.js_drop_down_menu').slideUp(400);
+            if(windowSize <= 1000) {
+                mainDropList.slideUp(400);
             }
+            if(windowSize <= 576) {
+                dropList.slideUp(400);
+            }
+            $(".js-booking").slideUp(400);
         });
+
 
         $(".language_list li").click(function(){
             LanguageChoose($(this));
@@ -44,8 +57,34 @@
         input.text(data_name);
     }
 
+    //   FILTER OFFER   //
+
+    var filter_room = $(".filter_offers li");
+    filter(filter_room);
+
+
 
 })(jQuery);
+
+
+function filter(filter_room){
+    filter_room.on('click', function () {
+        var $this = $(this);
+        var type = $this.data("id");
+        var room = $(".offer_container").find(".offer_content");
+
+        $this.siblings("li").removeClass("active");
+        $this.addClass("active");
+
+        if(type === "all") {
+            room.addClass("active");
+        } else {
+            room.removeClass("active");
+            room.filter('[data-type="'+type+'"]').addClass("active");
+        }
+    });
+    filter_room.filter('[data-id="all"]').trigger('click');
+}
 
 var page = 4;
 
@@ -61,7 +100,6 @@ function paginateData(url, data, type, selector) {
     .done(function(result) {
 
         if(result.success) {
-            console.log(result.data);
 
             var htmlData = '';
             for(var i = 0; i < result.data.length; i++) {
@@ -72,7 +110,6 @@ function paginateData(url, data, type, selector) {
                 if(type === "restaurant") {
                     htmlData += generateRestaurantHtml(result.data[i]);
                 }
-
             }
             $(selector).append(htmlData);
             page++;
@@ -83,7 +120,7 @@ function paginateData(url, data, type, selector) {
 
 function generateRoomsHtml(data) {
 
-    return '<div class="offer_content col-12 col-sm-6 col-xl-4 relative my-15">'+
+    return '<div class="offer_content active col-12 col-sm-6 col-xl-4 relative my-15" data-type="'+data.type+'">'+
         '<a href="room_review.php"><img src="'+data.image+'" class="w-100"></a>'+
         '<div class="price absolute top0 p5">'+
         '<span class="d-block text-center font-weight-bold">'+data.price+'$</span>'+
