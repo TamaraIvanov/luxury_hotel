@@ -6,10 +6,7 @@
 
     $(document).ready(function() {
 
-
         var windowSize = $(window).width();
-
-
 
         /************  DROP LIST  *************/
 

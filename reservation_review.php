@@ -29,7 +29,7 @@
                             <div class="selected_room  col-md-12 col-xl-7  float-left">
 
                                 <div class="room_img_wrapper pt-2">
-                                    <img class="w-100" src="img/rooms/room1.jpg">
+                                    <img class="w-100" src="img/room1.jpg">
                                     <p class="py-2">Double bad room, 1 Night</p>
                                 </div>
                             </div>
